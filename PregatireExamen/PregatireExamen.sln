@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PregatireExamen", "PregatireExamen.csproj", "{66CDA16F-D801-4E3D-A88F-09CFE4ECD4AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66CDA16F-D801-4E3D-A88F-09CFE4ECD4AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66CDA16F-D801-4E3D-A88F-09CFE4ECD4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66CDA16F-D801-4E3D-A88F-09CFE4ECD4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66CDA16F-D801-4E3D-A88F-09CFE4ECD4AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A19140A-E2A8-40C5-AD5E-2D123B69261E}
+	EndGlobalSection
+EndGlobal
