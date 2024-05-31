@@ -78,7 +78,6 @@ namespace PregatireExamen.Clase
                 Merge(arr, left, middle, right);
             }
         }
-
         private static void Merge(int[] arr, int left, int middle, int right) //merge sort second function
         {
             int[] temp = new int[right - left + 1];
@@ -111,5 +110,6 @@ namespace PregatireExamen.Clase
                 arr[i] = temp[i - left];
             }
         }
+
     }
 }
