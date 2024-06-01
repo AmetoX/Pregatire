@@ -16,10 +16,10 @@ namespace PregatireExamen
         //Algoritmi de sortare
             srt.print();
             //srt.BubbleSort();
-            //srt.MergeSort();
-            //selection sort
-            //quicksort
-            //insertion sort
+            //srt.MergeSortRun();
+            //srt.SelectionSort();
+            //srt.QuickSOrtRun();          
+            srt.InsertionSort();
             srt.print();
 
         //POO
