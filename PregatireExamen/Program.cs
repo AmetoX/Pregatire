@@ -23,7 +23,8 @@ namespace PregatireExamen
             //srt.print();
 
             //POO
-            //operatii cu matrice
+            //aplicatia -> operatii cu matrice
+
             // Încapsulare: Crearea instanțelor
             Animal myDog = new Dog("Buddy", 3);
             Animal myCat = new Cat("Whiskers", 2);
@@ -31,6 +32,18 @@ namespace PregatireExamen
             // Polimorfism: Apelarea funcțiilor virtuale
             myDog.MakeSound(); // Output: Dog barks.
             myCat.MakeSound(); // Output: Cat meows.
+
+            //supraincarcarea metodelor
+            Calculator calc = new Calculator();
+            Console.WriteLine(calc.Add(2, 3));       // Output: 5
+            Console.WriteLine(calc.Add(2, 3, 4));    // Output: 9
+            Console.WriteLine(calc.Add(2.5, 3.5));   // Output: 6.0
+
+            //supraincarcarea operatorilor
+            Complex c1 = new Complex(1.0, 2.0);
+            Complex c2 = new Complex(3.0, 4.0);
+            Complex result = c1 + c2;
+            Console.WriteLine(result);  // Output: 4.0 + 6.0i
 
         }
     }
