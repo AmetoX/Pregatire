@@ -19,9 +19,9 @@ namespace PregatireExamen
             //srt.MergeSortRun();
             //srt.SelectionSort();
             //srt.QuickSOrtRun();          
-            srt.InsertionSort();
-            srt.print();
-
+            //srt.InsertionSort();
+            //srt.print();
+            
         //POO
             
         }

@@ -185,7 +185,7 @@ namespace PregatireExamen.Clase
             //Returns the index of the pivot.
         }
 
-        static int Partition(int[] arr, int low, int high)
+        private static int Partition(int[] arr, int low, int high)
         {
             // Choose the pivot element
             int pivot = arr[high];
@@ -235,6 +235,16 @@ namespace PregatireExamen.Clase
 
             //Iterates through the array starting from the second element.
             //For each element, finds its correct position in the sorted part of the array and inserts it there.
+        }
+
+        public void Divide_Empera()
+        {
+            //ii defapt Alg merge sort
+        }
+
+        public void BK()
+        {
+
         }
     }
 }
