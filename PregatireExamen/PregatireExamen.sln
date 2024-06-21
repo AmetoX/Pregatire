@@ -5,6 +5,10 @@ VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PregatireExamen", "PregatireExamen.csproj", "{66CDA16F-D801-4E3D-A88F-09CFE4ECD4AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevideAndConquer", "..\DevideAndConquer\DevideAndConquer.csproj", "{3F4B5A0D-7B4B-422B-B253-F1D130248438}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatiCuMatrice", "..\OperatiCuMatrice\OperatiCuMatrice.csproj", "{24E20CEB-A5D8-4307-98C1-341C915CF9F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{66CDA16F-D801-4E3D-A88F-09CFE4ECD4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66CDA16F-D801-4E3D-A88F-09CFE4ECD4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66CDA16F-D801-4E3D-A88F-09CFE4ECD4AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F4B5A0D-7B4B-422B-B253-F1D130248438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4B5A0D-7B4B-422B-B253-F1D130248438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4B5A0D-7B4B-422B-B253-F1D130248438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4B5A0D-7B4B-422B-B253-F1D130248438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24E20CEB-A5D8-4307-98C1-341C915CF9F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24E20CEB-A5D8-4307-98C1-341C915CF9F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24E20CEB-A5D8-4307-98C1-341C915CF9F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24E20CEB-A5D8-4307-98C1-341C915CF9F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

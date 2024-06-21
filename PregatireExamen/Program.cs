@@ -21,9 +21,17 @@ namespace PregatireExamen
             //srt.QuickSOrtRun();          
             //srt.InsertionSort();
             //srt.print();
-            
-        //POO
-            
+
+            //POO
+            //operatii cu matrice
+            // Încapsulare: Crearea instanțelor
+            Animal myDog = new Dog("Buddy", 3);
+            Animal myCat = new Cat("Whiskers", 2);
+
+            // Polimorfism: Apelarea funcțiilor virtuale
+            myDog.MakeSound(); // Output: Dog barks.
+            myCat.MakeSound(); // Output: Cat meows.
+
         }
     }
 }
