@@ -23,7 +23,7 @@ namespace PregatireExamen.Clase
             count = 0;
         }
 
-        public void CreateArray()
+        private void CreateArray()
         {
             Random rnd = new Random();
             array = new int[rnd.Next(0, 20)];
@@ -44,10 +44,9 @@ namespace PregatireExamen.Clase
             count++;
         }
 
-        public void BubbleSort() //teoretic primeste ca parametru vecotorul
+        public void BubbleSort()//int[] v) //teoretic primeste ca parametru vecotorul
         {
             bool swapped;
-
             do
             {
                 swapped = false;
@@ -128,7 +127,7 @@ namespace PregatireExamen.Clase
             }
         }
 
-        public void SelectionSort()
+        public void SelectionSort() // (int[] array)
         {
             int n = array.Length;
             for (int i = 0; i < n - 1; i++)
@@ -213,7 +212,7 @@ namespace PregatireExamen.Clase
             return i + 1;
         }
 
-        public void InsertionSort()
+        public void InsertionSort() // (int[] array)
         {
             int n = array.Length;
             for (int i = 1; i < n; ++i)
@@ -343,6 +342,129 @@ namespace PregatireExamen.Clase
                 {
                     s[k] = i;
                     Combinari(k + 1, n, p, s);
+                }
+            }
+        }
+
+        //bk cu caractere
+        //aranjamentele unui cuvant cu urmatoarele reguli:
+        //nu contine consoane trei consoane consecutive
+        //sa nu fie 2 litere identice consecutive
+        public static void MainCmds()
+        {
+            Console.Write("Introduceți un cuvânt: ");
+            string input = Console.ReadLine().ToLower();
+
+            List<string> anagrams = GenerateAnagrams(input);
+            Console.WriteLine("Anagramele generate sunt:");
+            foreach (var anagram in anagrams)
+            {
+                Console.WriteLine(anagram);
+            }
+        }
+
+        static List<string> GenerateAnagrams(string input)
+        {
+            List<string> result = new List<string>();
+            Permute(input.ToCharArray(), 0, input.Length - 1, result);
+            return result;
+        }
+
+        static void Permute(char[] arr, int l, int r, List<string> result)
+        {
+            if (l == r)
+            {
+                string permutation = new string(arr);
+                if (IsValidAnagram(permutation))
+                {
+                    result.Add(permutation);
+                }
+            }
+            else
+            {
+                for (int i = l; i <= r; i++)
+                {
+                    Swap(ref arr[l], ref arr[i]);
+                    Permute(arr, l + 1, r, result);
+                    Swap(ref arr[l], ref arr[i]);
+                }
+            }
+        }
+
+        static bool IsValidAnagram(string input)
+        {
+            for (int i = 0; i < input.Length - 1; i++)
+            {
+                if (IsConsonant(input[i]) && IsConsonant(input[i + 1]))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        static bool IsConsonant(char c)
+        {
+            return "bcdfghjklmnpqrstvwxyz".Contains(c);
+        }
+
+        static void Swap(ref char a, ref char b)
+        {
+            char temp = a;
+            a = b;
+            b = temp;
+        }
+
+
+        //bk patrat perfect
+        static void Test02BK()//generare patrat perfect
+        {
+            int n = 9;
+            int[] s = new int[n];
+            bool[] b = new bool[n];
+            BK(0, n, s, b);
+        }
+        static void BK(int k, int n, int[] s, bool[] b)
+        {
+            if (k >= n)
+            {
+                int sl1 = s[0] + s[1] + s[2];
+                int sl2 = s[3] + s[4] + s[5];
+                int sl3 = s[6] + s[7] + s[8];
+
+                int sc1 = s[0] + s[3] + s[6];
+                int sc2 = s[1] + s[4] + s[7];
+                int sc3 = s[2] + s[5] + s[8];
+
+                int sd1 = s[0] + s[4] + s[8];
+                int sd2 = s[2] + s[4] + s[6];
+                if (sl1 == sl2 && sl1 == sl3 && sl1 == sc1 && sl1 == sc2 && sl1 == sc3 && sl1 == sd1 && sl1 == sd2)
+                {
+                    int l = 0;
+                    for (int i = 0; i < n; i++)
+                    {
+                        Console.Write(s[i] + " ");
+                        l++;
+                        if (l == 3)
+                        {
+                            Console.WriteLine();
+                            l = 0;
+                        }
+                    }
+                    Console.WriteLine();
+                }
+            }
+            else
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    if (!b[i])
+                    {
+                        b[i] = true;
+                        s[k] = i + 1;
+                        BK(k + 1, n, s, b);
+                        b[i] = false;
+                    }
                 }
             }
         }

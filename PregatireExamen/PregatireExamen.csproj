@@ -44,9 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clase\AlgoritmiSortare.cs" />
+    <Compile Include="Clase\Date.cs" />
+    <Compile Include="Clase\Fractie.cs" />
     <Compile Include="Clase\POO.cs" />
     <Compile Include="Clase\Queue.cs" />
     <Compile Include="Clase\Stack.cs" />
+    <Compile Include="Clase\Time.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
