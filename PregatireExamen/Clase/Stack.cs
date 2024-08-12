@@ -50,6 +50,8 @@ namespace PregatireExamen.Clase
             }
             val = t;
         }
+
+        }
         public bool IsEmpty()
         {
             if (val.Length < 1)
